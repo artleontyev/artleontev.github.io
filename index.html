@@ -17,6 +17,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 
@@ -26,15 +27,15 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/main-img.png" alt="Monitor">
+ 				<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="Monitor">
  			</div>
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Артем Леонтьев</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS
+ 				<p class="header-pretitle wow fadeInDownBig" data-wow-delay=0.1s>Веб-разработчик</p>
+ 				<h1 class="header-title wow fadeInRightBig"data-wow-delay=0.2s>Артем Леонтьев</h1>
+ 				<p class="header-subtitle wow fadeInRightBig"data-wow-delay=0.3s>Верстка на HTML/CSS
 <br>Разработка сайтов под ключ</p>
-				<div class="header-button-block">
-					<a href="https://vk.me/" class="header-button">Связаться</a>
+				<div class="header-button-block wow fadeInUpBig" data-wow-delay=0.4s>
+					<a href="https://vk.me/" class="header-button ">Связаться</a>
 					<small>*Это бесплатно</small>
 				</div>
  			</div>
@@ -45,7 +46,7 @@
  </header>
  <section class="portfolio">
  	<div class="container">
- 	<div class="portfolio-block">
+ 	<div class="portfolio-block wow fadeIn" data-wow-delay=0.1>
  		<h2 class="portfolio-title">Портфолио</h2>
  		<p class="portfolio-subtitle">Мои работы</p>
  		<div class="row">
@@ -74,20 +75,20 @@
  	<div class="container">
  		<div class="row">
  		<div class="col-md-4">
- 			<h4 class="footer-author">Артем Леонтьев</h4>
- 			<p class="footer-text">Разработка сайтов под ключ</p>
+ 			<h4 class="footer-author wow zoomInLeft" data-wow-delay=0.1s>Артем Леонтьев</h4>
+ 			<p class="footer-text wow zoomInLeft" data-wow-delay=0.1s>Разработка сайтов под ключ</p>
  		</div>
  		<div class="col-md-4">
  			<div class="social-block">
  				<p>Подпишитесь:</p>
- 				<a href="https://facebook.ru/"><img src="img/socials/facebook-logo-button.png" alt="Фэйсбук"></a>
- 				<a href="https://telegram.ru/"><img src="img/socials/telegram-symbol.png" alt="Телеграм"></a>
- 				<a href="https://vk.ru/"><img src="img/socials/vk-social-logotype.png" alt="Вконтакте"></a>
- 				<a href="https://youtube.ru/"><img src="img/socials/youtube-symbol.png" alt="Ютуб"></a>
+ 				<a class="wow bounceInDown" data-wow-delay=0.1s href="https://facebook.ru/"><img   src="img/socials/facebook-logo-button.png" alt="Фэйсбук"></a>
+ 				<a class="wow bounceInDown" data-wow-delay=0.2s href="https://telegram.ru/"><img  src="img/socials/telegram-symbol.png" alt="Телеграм"></a>
+ 				<a class="wow bounceInDown" data-wow-delay=0.3s href="https://vk.ru/"><img  src="img/socials/vk-social-logotype.png" alt="Вконтакте"></a>
+ 				<a class="wow bounceInDown" data-wow-delay=0.4s href="https://youtube.ru/"><img  src="img/socials/youtube-symbol.png" alt="Ютуб"></a>
  			</div>
  		</div>
  		<div class="col-md-4">
- 			<div class="footer-cta-block">
+ 			<div class="footer-cta-block wow zoomInRight" data-wow-delay=0.1s>
  				<p class="footer-cta">Напишите мне:</p>
  			<a href="https://vk.me/" class="footer-button">Написать</a>
  			</div>
@@ -96,6 +97,9 @@
  </div>
  </footer>
 
-
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
